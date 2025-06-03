@@ -21,7 +21,7 @@ Monorepo with two main components:
 - All APIs are authenticated via JWT tokens.
 - Each user has an isolated model and data directory.
 - Structured for future extension into a full microservice with a persistent database.
-- Currently supports a single test user (`bilal@yahoo.com` with model in `ml_models/bilal_yahoo/`).
+- Currently supports a single test user (`bilal` with model in `ml_models/bilal_yahoo/`).
 
 ---
 
