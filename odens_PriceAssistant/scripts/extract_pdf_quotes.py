@@ -6,7 +6,7 @@ from pathlib import Path
 import json
 
 # Paths
-PDF_FOLDER = Path("data/real50Quotes")
+PDF_FOLDER = Path("data/user_alpha/originial_Quotes_data")
 OUTPUT_PATH = Path("data/user_alpha/quotes_extracted.json")
 
 def extract_text_from_pdf(file_path):
