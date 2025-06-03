@@ -1,0 +1,44 @@
+[project]
+name = "odens-priceassistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic==1.16.1",
+    "annotated-types==0.7.0",
+    "cffi==1.17.1",
+    "charset-normalizer==3.4.2",
+    "colorama==0.4.6",
+    "colorlog==6.9.0",
+    "cryptography==45.0.3",
+    "faker==37.3.0",
+    "greenlet==3.2.2",
+    "joblib==1.5.1",
+    "mako==1.3.10",
+    "markupsafe==3.0.2",
+    "numpy==2.2.6",
+    "optuna==4.3.0",
+    "packaging==25.0",
+    "pandas==2.2.3",
+    "pdfminer-six==20250327",
+    "pdfplumber==0.11.6",
+    "pillow==11.2.1",
+    "pycparser==2.22",
+    "pydantic==2.11.5",
+    "pydantic-core==2.33.2",
+    "pypdfium2==4.30.1",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2025.2",
+    "pyyaml==6.0.2",
+    "scikit-learn==1.6.1",
+    "scipy==1.15.3",
+    "six==1.17.0",
+    "sqlalchemy==2.0.41",
+    "threadpoolctl==3.6.0",
+    "tqdm==4.67.1",
+    "typing-extensions==4.13.2",
+    "typing-inspection==0.4.1",
+    "tzdata==2025.2",
+    "xgboost==3.0.2",
+]
