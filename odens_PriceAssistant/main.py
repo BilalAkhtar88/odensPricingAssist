@@ -42,18 +42,18 @@ def main():
     print("🔍 Running Step 2: Validating sample quote entries using Pydantic schema...\n")
     # # This function validates hard-coded sample quote dictionaries.
     # # It's designed to simulate structured entries from PDF-extracted quotes.
-    # run_validation(Quote)
+    run_validation(Quote)
 
     print("✅ Validation complete. Ready for Step 3: PDF data ingestion.\n")
-    # run_pdf_extraction(Quote)
+    run_pdf_extraction(Quote)
     print("\n✅ Done Step 3. PDF data has been extracted and validated.")
 
     # # 🔍 Step 4: Data Analysis before Augmentation
     # # The results from this sectiona re used as a prompt for more realistic data augmentation
-    # print("Data Analysis before Augmentation:\n")
-    # with open("data/user_alpha/quotes_extracted.json", encoding="utf-8") as f:
-    #     quotes = json.load(f)
-    # analyze_data(quotes)
+    print("Data Analysis before Augmentation:\n")
+    with open("data/user_alpha/quotes_extracted.json", encoding="utf-8") as f:
+        quotes = json.load(f)
+    analyze_data(quotes)
 
     # Step 5: Augment extracted data with synthetic variations
     print("🔄 Running Step 5: Data augmentation from real quotes...\n")
@@ -63,7 +63,7 @@ def main():
     # 🔹 Step 6: Feature extraction from augmented dataset adhering to QuoteML schema
     print("\n📊 Running Step 6: Feature extraction for ML training...")
     df_features = run_feature_extraction()
-    # print(df_features.head())
+    print(df_features.head())
 
     # Step 7: Model Training with XGBoost and Optuna
     print("\n🤖 Running Step 7: ML Model Training (XGBoost with Hyperparameter Tuning)")
